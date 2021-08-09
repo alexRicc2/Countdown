@@ -1,2 +1,2 @@
 # site disponível [Aqui](https://alexricc2.github.io/Countdown/)
-![](/image/imageReadme)
+<img src="/images/imageReadme.png">
