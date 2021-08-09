@@ -7,6 +7,10 @@ const nHours = document.querySelector('#hours')
 const nMinutes = document.querySelector('#minutes')
 const nSeconds = document.querySelector('#seconds')
 
+function formata(numero){
+  return numero < 10 ? `0${numero}` : numero
+}
+
 function timer(){
   const hoje = new Date();
   const diferenca = Math.floor((dataO - hoje) / 1000)
@@ -17,9 +21,9 @@ function timer(){
   console.log(dias, horas, minutos, segundos)
 
   nDays.innerText = dias
-  nHours.innerText = horas
-  nMinutes.innerText = minutos
-  nSeconds.innerText = segundos
+  nHours.innerText = formata(horas)
+  nMinutes.innerText = formata(minutos)
+  nSeconds.innerText = formata(segundos)
   
 }
 timer()
